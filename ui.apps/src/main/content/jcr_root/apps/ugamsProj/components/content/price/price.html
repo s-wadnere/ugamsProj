@@ -1,0 +1,21 @@
+<sly data-sly-use.price="com.Ugams.core.models.Price"></sly>
+<section class="price-area section-gap">
+				<div class="container">
+					<div class="row">
+					<div class="col-lg-3 col-md-6 single-price">
+							<div class="top-part">			
+    							<h1 class="package-no">${price.priceNumber}</h1>
+								<h4>${price.priceType}</h4>
+								<p class="mt-10">${price.priceTitle}</p>
+							</div>
+							<div class="package-list">
+								<ul>
+									<li>${price.priceText1}</li>
+									<li>${price.priceText2}</li>
+									<li>${price.priceText3}</li>
+								</ul>
+							</div>							
+						</div>
+                    </div>
+				</div>	
+			</section>

@@ -1,0 +1,17 @@
+<section class="recent-blog-area section-gap">
+				<div class="container" data-sly-use.blog="com.Ugams.core.models.Blog">
+					<div class="row">
+<div class="single-recent-blog col-lg-4 col-md-4">
+							<div class="thumb">				
+								<img class="f-img img-fluid mx-auto" src="${blog.img}" alt="">	
+							</div>							
+							<a href="#">
+								<h4>${blog.blogTitle}</h4>
+							</a>
+							<p>
+								${blog.blogText}
+							</p>
+						</div>
+                     </div>
+				</div>	
+			</section>
