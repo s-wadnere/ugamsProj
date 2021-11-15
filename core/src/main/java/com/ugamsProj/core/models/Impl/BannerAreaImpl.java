@@ -1,16 +1,29 @@
 package com.ugamsProj.core.models.Impl;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
 import com.ugamsProj.core.models.BannerArea;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
+import org.apache.sling.models.annotations.Exporter;
+import org.apache.sling.models.annotations.ExporterOption;
 import org.apache.sling.models.annotations.Model;
 
 import javax.inject.Inject;
 
 @Model(adaptables = Resource.class,
         adapters = BannerArea.class,
+        resourceType = BannerAreaImpl.RESOURCE_TYPE,
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
+@Exporter(name = "jackson", extensions ="json",selector = "bannerarea_comp",
+        options = {
+                @ExporterOption(name = "SerializationFeature.WRAP_ROOT_VALUE", value="true")
+        })
+
+@JsonRootName("banner")
 public class BannerAreaImpl implements BannerArea{
+    final protected static String RESOURCE_TYPE="ugamsProj/components/content/banner-area";
+
     @Inject
     String title;
     @Inject
@@ -23,6 +36,7 @@ public class BannerAreaImpl implements BannerArea{
     String img;
     @Inject
     String path;
+    @JsonProperty(value="Title")
     @Override
     public String getBannerAreaTitle() {
         return title;
