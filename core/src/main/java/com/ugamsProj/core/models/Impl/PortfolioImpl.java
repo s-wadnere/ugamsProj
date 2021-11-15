@@ -17,8 +17,7 @@ public class PortfolioImpl implements Portfolio{
     String portfolioTitle;
     @Inject
     String img;
-    @Inject
-    String preimg;
+
     @Override
     public String getPortfolioTitle() {
         return portfolioText;
@@ -31,8 +30,5 @@ public class PortfolioImpl implements Portfolio{
     public String getImg() {
         return img;
     }
-    @Override
-    public String getPreimg() {
-        return preimg;
-    }
+
 }

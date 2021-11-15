@@ -21,6 +21,8 @@ public class BannerAreaImpl implements BannerArea{
     String buttonTitle;
     @Inject
     String img;
+    @Inject
+    String path;
     @Override
     public String getBannerAreaTitle() {
         return title;
@@ -41,5 +43,7 @@ public class BannerAreaImpl implements BannerArea{
     public String getImg() {
         return img;
     }
+    @Override
+    public String getBannerAreaPathField() { return path; }
 
 }
