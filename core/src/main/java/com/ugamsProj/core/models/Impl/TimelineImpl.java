@@ -4,10 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
 import com.ugamsProj.core.models.Timeline;
 import org.apache.sling.api.resource.Resource;
-import org.apache.sling.models.annotations.DefaultInjectionStrategy;
-import org.apache.sling.models.annotations.Exporter;
-import org.apache.sling.models.annotations.ExporterOption;
-import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.*;
 import org.apache.sling.models.annotations.injectorspecific.ChildResource;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,12 +16,14 @@ import java.util.Map;
         adapters = Timeline.class,
         resourceType = TimelineImpl.RESOURCE_TYPE,
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
+
+
 @Exporter(name = "jackson", extensions ="json",selector = "timeline_comp",
         options = {
                 @ExporterOption(name = "SerializationFeature.WRAP_ROOT_VALUE", value="true")
         })
 
-@JsonRootName("Timeline_Component")
+@JsonRootName("timeline")
 public class TimelineImpl implements Timeline{
 
     final protected static String RESOURCE_TYPE="ugamsProj/components/content/timeline";
