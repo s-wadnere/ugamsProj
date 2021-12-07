@@ -1,0 +1,20 @@
+<section class="testimonial-area">
+        <div class="container" data-sly-use.testimonial="com.ugamsProj.core.models.TestimonialArea">    
+                 <div class="row">
+                        <div class="active-testimonial" data-sly-list.items="${testimonial.testimonialAreaDetails}">
+                        	<div class="single-testimonial item d-flex flex-row">
+                                <div class="thumb">
+                                    <img class="img-fluid" src="" alt="">
+                                </div>
+                                <div class="desc">                
+                                    <p>
+                                        ${items.desc}
+                                    </p>
+                                    <h4>${items.name}</h4>
+                                    <p>${items.desg}</p>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+           </div>
+</section>

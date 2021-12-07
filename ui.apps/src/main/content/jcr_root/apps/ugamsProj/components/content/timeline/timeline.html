@@ -1,0 +1,13 @@
+<sly data-sly-use.timeline="com.ugamsProj.core.models.Timeline"></sly>
+<section class="timeline pb-120">
+<ul data-sly-list.items="${timeline.timeLineDetails}">
+                <li>
+                  <div class="content">
+                    <h4>
+                      <time>${items.Title}</time>
+                    </h4>
+                    <p>${items.Year}</p>
+                    <p>${items.Result}</p>
+                  </div>
+                </li>
+</section>
