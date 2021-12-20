@@ -32,7 +32,7 @@ public class SchedularServiceImpl implements SchedularService {
         try  {
             ResourceResolver serviceResourceResolver = ResolverUtil.newResolver(resourceResolverFactory);
             Session session = serviceResourceResolver.adaptTo(Session.class);
-            Resource resource = serviceResourceResolver.getResource("/content/ugamsProj/us/en/demo2/jcr:content");
+            Resource resource = serviceResourceResolver.getResource("/content/ugamsProj/us/en/scheduler/jcr:content/root/container/container/date_time");
             Node node=resource.adaptTo(Node.class);
             node.setProperty("time", DateUtil.parseISO8601(DateUtil.getISO8601Date(Calendar.getInstance())));
             session.save();
