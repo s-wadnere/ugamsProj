@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="3de51479-35b0-429e-8a3d-d15ca5368cfb">
+    <jcr:content
+        cq:name="ugamproj-author-details"
+        cq:parentPath="/content/dam/ugamsproj/content-fragment/us"
+        jcr:description=""
+        jcr:lastModified="{Date}2021-12-13T13:22:19.389+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="ugamProj Author Details"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2021-12-13T13:22:19.389+05:30">
+        <data
+            cq:model="/conf/ugamsProj/settings/dam/cfm/models/ugams-cf-model"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                authorname="Paulo Coelho"
+                authorname_x0040_LastModified="{Date}2021-12-13T11:06:24.910+05:30"
+                books="[Alchemist,The Archer]"
+                books_x0040_LastModified="{Date}2021-12-13T11:06:24.910+05:30"
+                description="&lt;p>Best books must read!!!!&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2021-12-13T11:06:24.912+05:30"
+                isauthor="{Boolean}true"
+                isauthor_x0040_LastModified="{Date}2021-12-13T11:06:24.912+05:30"
+                publishdate="{Date}2021-12-13T11:05:00.000+05:30"
+                publishdate_x0040_LastModified="{Date}2021-12-13T11:06:24.911+05:30"/>
+            <ugams_cf_variation
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                authorname="Robin Sharma"
+                authorname_x0040_LastModified="{Date}2021-12-13T13:22:19.355+05:30"
+                books="[The 5 AM club]"
+                books_x0040_LastModified="{Date}2021-12-13T13:22:19.355+05:30"
+                description="&lt;p>Best books must read!!!!&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2021-12-13T13:22:19.355+05:30"
+                isauthor="{Boolean}false"
+                isauthor_x0040_LastModified="{Date}2021-12-13T13:22:19.356+05:30"
+                publishdate="{Date}2021-12-01T11:05:00.000+05:30"
+                publishdate_x0040_LastModified="{Date}2021-12-13T13:22:19.355+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <model jcr:primaryType="nt:unstructured">
+            <variations jcr:primaryType="nt:unstructured">
+                <ugams_cf_variation
+                    jcr:description=""
+                    jcr:mixinTypes="[cq:Taggable]"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Ugams CF Variation"
+                    name="ugams_cf_variation">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        synchronizeWithVersion="[authorname:2674591c-8f1e-4a41-a5f0-870e0fb08d88,books:2674591c-8f1e-4a41-a5f0-870e0fb08d88,publishdate:2674591c-8f1e-4a41-a5f0-870e0fb08d88,description:2674591c-8f1e-4a41-a5f0-870e0fb08d88,isauthor:2674591c-8f1e-4a41-a5f0-870e0fb08d88]"/>
+                </ugams_cf_variation>
+            </variations>
+        </model>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>
