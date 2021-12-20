@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-12-10T16:12:18.790+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[]"
+        cq:template="/conf/ugamsProj/settings/wcm/templates/customxf-template"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Portfolio Experience Fragment"
+        sling:resourceType="ugamsProj/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="ugamsProj/components/container"
+            layout="responsiveGrid">
+            <responsivegrid
+                jcr:created="{Date}2021-06-21T14:08:17.305+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-21T14:08:17.305+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+                <title_text
+                    jcr:created="{Date}2021-06-21T14:18:02.062+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-09T10:29:46.837+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamsProj/components/content/title-text"
+                    bottomPadding="true"
+                    color="false"
+                    sectionGap="true"
+                    text="Who are in extremely love with eco friendly system."
+                    title="Our Latest Featured Projects"/>
+                <portfolio_teaser
+                    cq:masterBuildingBlock="{Boolean}true"
+                    jcr:created="{Date}2021-06-22T11:41:49.149+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-08T22:41:46.237+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="portfolio image"
+                    sling:resourceType="wcm/foundation/components/responsivegrid">
+                    <portfolio_teaser447359792851600
+                        cq:masterBuildingBlock="{Boolean}true"
+                        jcr:lastModified="{Date}2021-12-08T23:28:40.753+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Portfolio Building Block"
+                        sling:resourceType="cq/experience-fragments/editor/components/buildingblock">
+                        <portfolio_teaser447359792851600450174309084000
+                            jcr:lastModified="{Date}2021-12-10T16:12:18.503+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="ugamsProj/components/content/portfolio-teaser"
+                            img="/content/dam/ugams/p2.jpg"
+                            portfolioText="2D Vinyl Design"
+                            portfolioTitle="vector">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="4"/>
+                            </cq:responsive>
+                        </portfolio_teaser447359792851600450174309084000>
+                        <item450174312754000
+                            jcr:created="{Date}2021-06-22T11:42:07.966+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-12-08T23:24:36.700+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="ugamsProj/components/content/portfolio-teaser"
+                            img="/content/dam/ugams/p2.jpg"
+                            portfolioText="2D Vinyl Design"
+                            portfolioTitle="vector">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="4"/>
+                            </cq:responsive>
+                        </item450174312754000>
+                        <item450174318224100
+                            jcr:created="{Date}2021-06-22T11:42:26.939+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-12-08T23:24:47.274+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="ugamsProj/components/content/portfolio-teaser"
+                            img="/content/dam/ugams/p6.jpg"
+                            portfolioText="2D Vinyl Design"
+                            portfolioTitle="raster">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="4"/>
+                            </cq:responsive>
+                        </item450174318224100>
+                    </portfolio_teaser447359792851600>
+                </portfolio_teaser>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>
