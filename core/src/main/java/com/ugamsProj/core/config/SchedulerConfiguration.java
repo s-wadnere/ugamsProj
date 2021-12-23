@@ -22,4 +22,3 @@ public @interface SchedulerConfiguration {
     public String cronExpression() default "0 0 12 1/1 * ? *";
 
 }
-
