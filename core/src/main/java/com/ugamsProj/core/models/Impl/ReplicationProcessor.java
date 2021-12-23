@@ -26,6 +26,8 @@ public class ReplicationProcessor implements Preprocessor {
     private ResourceResolverFactory resourceResolverFactory;
     @Reference
     SchedularService schedularService;
+
+    String compPath="/content/ugamsProj/us/en/scheduler/jcr:content/root/container/container/date_time";
     @Override
     public void preprocess(ReplicationAction replicationAction, ReplicationOptions replicationOptions) throws ReplicationException {
 
@@ -41,12 +43,12 @@ public class ReplicationProcessor implements Preprocessor {
                 log.debug("===============inside try====================");
                 serviceResourceResolver = ResolverUtil.newResolver(resourceResolverFactory);
                 Session session = serviceResourceResolver.adaptTo(Session.class);
-                Resource resource = serviceResourceResolver.getResource("/content/ugamsProj/us/en/scheduler/jcr:content/root/container/container/date_time");
+                Resource resource = serviceResourceResolver.getResource(compPath);
                 Node node = resource.adaptTo(Node.class);
                 if(node.getProperty("time") != DateUtil.parseISO8601(DateUtil.getISO8601Date(Calendar.getInstance())))
                 {
                     log.debug("===============inside if====================");
-                    schedularService.getServiceName();
+                    schedularService.getServiceName(compPath);
                 }
                 session.save();
                 session.logout();
