@@ -38,6 +38,10 @@ public class UgamsProjScheduler implements Runnable{
     @OSGiService
     ResourceResolverFactory resourceResolverFactory;
 
+
+    String compPath="/content/ugamsProj/us/en/scheduler/jcr:content/root/container/container/date_time";
+
+
     @Activate
     protected void activate(SchedulerConfiguration config) {
         schedulerId = config.schedulerName().hashCode();
@@ -62,10 +66,10 @@ public class UgamsProjScheduler implements Runnable{
     }
     @Override
     public void run() {
-        schedularService.getServiceName();
+
+        schedularService.getServiceName(compPath);
         LOG.info("\n<-----------Inside Run Method----------->");
     }
 
-    }
-
+}
 
