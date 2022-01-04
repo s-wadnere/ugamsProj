@@ -36,10 +36,10 @@ public class ServiceDemoImpl implements ServiceDemo {
     @Inject
     QueryBuilder queryBuilder;
     String user = " ";
-    @PostConstruct
+    /*@PostConstruct
     protected void init(){
         LOG.info("\n printing Model logs");
-    }
+    }*/
 
     @Override
     public String getUsersList() {
@@ -53,7 +53,7 @@ public class ServiceDemoImpl implements ServiceDemo {
         userMap.put("type", "rep:User");
         userMap.put("p.properties", "rep:principalName");
         try{
-            LOG.info("\n Inside Try..");
+            //LOG.info("\n Inside Try..");
             ResourceResolver serviceResourceResolver = ResolverUtil.newResolver(resourceResolverFactory);
             // LOG.info("\n resolver hit "+serviceResourceResolver.getUserID());
             Session session = serviceResourceResolver.adaptTo(Session.class);
@@ -64,10 +64,8 @@ public class ServiceDemoImpl implements ServiceDemo {
 
                 user = user + "\r\n" + hit.getProperties().get("rep:principalName", String.class);
             }
-        } catch (RepositoryException e) {
+        } catch (RepositoryException | LoginException e) {
             LOG.info("Service User ERROR",e.getMessage());
-        } catch (LoginException e) {
-            e.printStackTrace();
         }
         return user;
     }

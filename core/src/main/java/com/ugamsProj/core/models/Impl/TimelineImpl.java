@@ -31,7 +31,7 @@ public class TimelineImpl implements Timeline{
     @ChildResource
     Resource timelinemulti;
 
-    @JsonProperty(value="Timeline Details")
+    //@JsonProperty(value="Timeline Details")
     @Override
     public List<Map<String, String>> getTimeLineDetails() {
         List<Map<String, String>> timeLineMap=new ArrayList<>();
@@ -39,16 +39,16 @@ public class TimelineImpl implements Timeline{
         if(timelinemulti!=null){
             for (Resource fact : timelinemulti.getChildren()) {
                 Map<String,String> timelinearea=new HashMap<>();
-                timelinearea.put("Title",fact.getValueMap().get("title",String.class));
-                timelinearea.put("Year",fact.getValueMap().get("year",String.class));
-                timelinearea.put("Result",fact.getValueMap().get("result",String.class));
+                timelinearea.put("title",fact.getValueMap().get("title",String.class));
+                timelinearea.put("year",fact.getValueMap().get("year",String.class));
+                timelinearea.put("result",fact.getValueMap().get("result",String.class));
                 timeLineMap.add(timelinearea);
             }
         }
         return timeLineMap;
     }
 
-    @JsonProperty(value="Result")
-    public String Result(){return "timeline";}
+   /*@JsonProperty(value="Result")
+    public String Result(){return "timeline";}*/
 
 }

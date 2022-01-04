@@ -21,13 +21,14 @@ import java.util.Calendar;
 
 @Component(immediate = true)
 public class ReplicationProcessor implements Preprocessor {
-    private static final Logger log = LoggerFactory.getLogger(ReplicationProcessor.class);
+    //private static final Logger log = LoggerFactory.getLogger(ReplicationProcessor.class);
     @Reference
     private ResourceResolverFactory resourceResolverFactory;
     @Reference
     SchedularService schedularService;
 
-    String compPath="/content/ugamsProj/us/en/scheduler/jcr:content/root/container/container/date_time";
+    String compPath = "/content/ugamsProj/us/en/scheduler/jcr:content/root/container/container/date_time";
+
     @Override
     public void preprocess(ReplicationAction replicationAction, ReplicationOptions replicationOptions) throws ReplicationException {
 
@@ -35,19 +36,18 @@ public class ReplicationProcessor implements Preprocessor {
             return;
         }
         String path = replicationAction.getPath();
-        if(path.equals("/content/ugamsProj/us/en/scheduler")){
-            log.debug("==========Preprocessor Triggered============");
+        if (path.equals("/content/ugamsProj/us/en/scheduler")) {
+            //log.debug("==========Preprocessor Triggered============");
 
             ResourceResolver serviceResourceResolver = null;
             try {
-                log.debug("===============inside try====================");
+                //log.debug("===============inside try====================");
                 serviceResourceResolver = ResolverUtil.newResolver(resourceResolverFactory);
                 Session session = serviceResourceResolver.adaptTo(Session.class);
                 Resource resource = serviceResourceResolver.getResource(compPath);
                 Node node = resource.adaptTo(Node.class);
-                if(node.getProperty("time") != DateUtil.parseISO8601(DateUtil.getISO8601Date(Calendar.getInstance())))
-                {
-                    log.debug("===============inside if====================");
+                if (node.getProperty("time") != DateUtil.parseISO8601(DateUtil.getISO8601Date(Calendar.getInstance()))) {
+                    //log.debug("===============inside if====================");
                     schedularService.getServiceName(compPath);
                 }
                 session.save();
@@ -55,13 +55,12 @@ public class ReplicationProcessor implements Preprocessor {
             } catch (LoginException | RepositoryException | InvalidDateException e) {
                 e.printStackTrace();
             }
-
-        }
-        try {
+/*try {
             log.debug(path);
         }
         catch (Exception e) {
             log.debug(e.getMessage());
+        }*/
         }
     }
 }

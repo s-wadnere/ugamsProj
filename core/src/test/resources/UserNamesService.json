@@ -1,0 +1,8 @@
+{
+  "users": {
+    "ugam": {
+      "jcr:primaryType": "rep:User",
+      "rep:principalName": "ugamsProj"
+    }
+  }
+}
