@@ -16,7 +16,7 @@ public class OSGIConfigServiceImpl implements OSGIConfigService{
     private String runModes;
 
     @Activate
-    protected void activate(OSGIConfigDemo osgiConfigDemo){
+    public void activate(OSGIConfigDemo osgiConfigDemo){
         serviceName=osgiConfigDemo.serviceName();
         serviceID=osgiConfigDemo.serviceID();
         isService=osgiConfigDemo.isService();

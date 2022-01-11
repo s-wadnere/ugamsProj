@@ -62,13 +62,12 @@ public class UgamsProjScheduler implements Runnable{
         scheduleOptions.name(String.valueOf(schedulerId));
         scheduleOptions.canRunConcurrently(true);
         scheduler.schedule(this, scheduleOptions);
-        LOG.info("\n <---------Scheduler added---------->");
+        //LOG.info("\n <---------Scheduler added---------->");
     }
     @Override
     public void run() {
 
         schedularService.getServiceName(compPath);
-        LOG.info("\n<-----------Inside Run Method----------->");
     }
 
 }

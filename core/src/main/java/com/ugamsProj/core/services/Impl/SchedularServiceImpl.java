@@ -48,7 +48,7 @@ public class SchedularServiceImpl implements SchedularService {
             session.save();
             session.logout();
         } catch (Exception e) {
-            LOG.info(e.getMessage());
+            //LOG.info(e.getMessage());
         }
 
     }
