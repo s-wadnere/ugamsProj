@@ -15,6 +15,6 @@
   ~ limitations under the License.
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <workspaceFilter version="1.0">
-    <filter root="/apps/ugamsProj-packages"/>
-    <filter root="/apps/ugamsProj-vendor-packages"/>
+    <filter root="/apps/ugamsproj-packages"/>
+    <filter root="/apps/ugamsproj-vendor-packages"/>
 </workspaceFilter>

@@ -1,7 +1,7 @@
-package com.ugamsProj.core.services.Impl;
+package com.ugamsproj.core.services.impl;
 
-import com.ugamsProj.core.config.OSGIConfigDemo;
-import com.ugamsProj.core.services.OSGIConfigService;
+import com.ugamsproj.core.config.OSGIConfigDemo;
+import com.ugamsproj.core.services.OSGIConfigService;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.metatype.annotations.Designate;

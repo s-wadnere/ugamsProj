@@ -14,7 +14,6 @@
             let countryValue = $(".cq-dialog").find("#country")[0].selectedItem.value;
             let citiesField = $(".cq-dialog").find("#cities")[0];
             //Getting the value set from datasource
-            let citiesNodeVal = citiesField.selectedItem.value;
 
             let options = citiesJSON[countryValue];
             let optionItems = citiesField.items;
@@ -27,8 +26,6 @@
                 obj["content"] = cnt;
                 optionItems.add(obj);
             }
-            if (citiesNodeVal !== "") // Set the value once options are loaded 
-        		$(citiesField).find("coral-select-item[value='"+citiesNodeVal+"']").attr("selected", "selected");
         };
 
 

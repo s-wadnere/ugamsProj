@@ -23,7 +23,7 @@
                 sling:resourceType="cq/workflow/components/model/process">
                 <metaData
                     jcr:primaryType="nt:unstructured"
-                    PROCESS="com.ugamsProj.core.models.Impl.UgamProjectWorkflow"
+                    PROCESS="com.ugamsproj.core.models.impl.UgamProjectWorkflow"
                     PROCESS_ARGS="approver1: Shraddha"
                     PROCESS_AUTO_ADVANCE="true"/>
             </process_678109133>
@@ -52,8 +52,8 @@
                 sling:resourceType="cq/workflow/components/model/process">
                 <metaData
                     jcr:primaryType="nt:unstructured"
-                    PROCESS="com.ugamsProj.core.models.Impl.UgamProjectWorkflow"
-                    PROCESS_ARGS="approver2: ugamsProject"
+                    PROCESS="com.ugamsproj.core.models.impl.UgamProjectWorkflow"
+                    PROCESS_ARGS="approver2: ugamsproject"
                     PROCESS_AUTO_ADVANCE="true"/>
             </process>
         </flow>

@@ -1,4 +1,4 @@
-package com.ugamsProj.core.models.Impl;
+package com.ugamsproj.core.models.impl;
 
 import com.adobe.granite.workflow.WorkflowException;
 import com.adobe.granite.workflow.WorkflowSession;
@@ -10,9 +10,6 @@ import org.osgi.framework.Constants;
 import org.osgi.service.component.annotations.Component;
 
 import javax.jcr.*;
-import javax.jcr.lock.LockException;
-import javax.jcr.nodetype.ConstraintViolationException;
-import javax.jcr.version.VersionException;
 
 @Component(
         service = WorkflowProcess.class,
@@ -31,7 +28,7 @@ public class UgamProjectWorkflow implements WorkflowProcess{
                 Session session = workflowSession.adaptTo(Session.class);
             String path = workflowData.getPayload().toString() + "/jcr:content";
             Node node = (Node) session.getItem(path);
-            String[] processArgs = metaDataMap.get("PROCESS_ARGS", "string").toString().split(",");
+            String[] processArgs = metaDataMap.get("PROCESS_ARGS", "string").split(",");
             for (String wfArgs : processArgs) {
                 String[] args = wfArgs.split(":");
                 String prop = args[0];
@@ -42,7 +39,7 @@ public class UgamProjectWorkflow implements WorkflowProcess{
             }
         }
     } catch (Exception e) {
-
+            e.getStackTrace();
         }
     }
 }

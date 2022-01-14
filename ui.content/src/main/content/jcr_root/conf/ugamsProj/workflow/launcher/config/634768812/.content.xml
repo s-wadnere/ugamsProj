@@ -9,7 +9,7 @@
     eventType="{Long}16"
     excludeList=""
     features="[]"
-    glob="/content/ugamsProj/us/en"
+    glob="/content/ugamsproj/us/en"
     nodetype="cq:PageContent"
     runModes="author"
     workflow="/var/workflow/models/ugams-project-model"/>

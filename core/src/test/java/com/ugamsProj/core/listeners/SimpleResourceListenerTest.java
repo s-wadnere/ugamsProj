@@ -13,13 +13,12 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package com.ugamsProj.core.listeners;
+package com.ugamsproj.core.listeners;
 
 import java.util.Collections;
 import java.util.List;
 
 import org.apache.sling.api.SlingConstants;
-import org.junit.jupiter.api.Test;
 import org.osgi.service.event.Event;
 
 import uk.org.lidalia.slf4jext.Level;
@@ -36,9 +35,9 @@ class SimpleResourceListenerTest {
 
     private TestLogger logger = TestLoggerFactory.getTestLogger(fixture.getClass());
 
-    @Test
+    @org.junit.jupiter.api.Test
     void handleEvent() {
-        Event resourceEvent = new Event("event/topic", Collections.singletonMap(SlingConstants.PROPERTY_PATH, "/content/test"));
+        Event resourceEvent = new Event("event/topic", Collections.singletonMap(SlingConstants.PROPERTY_PATH, "/content/Test"));
 
         fixture.handleEvent(resourceEvent);
 
@@ -50,7 +49,7 @@ class SimpleResourceListenerTest {
                 () -> assertEquals(Level.DEBUG, event.getLevel()),
                 () -> assertEquals(2, event.getArguments().size()),
                 () -> assertEquals("event/topic", event.getArguments().get(0)),
-                () -> assertEquals("/content/test", event.getArguments().get(1))
+                () -> assertEquals("/content/Test", event.getArguments().get(1))
         );
     }
 }

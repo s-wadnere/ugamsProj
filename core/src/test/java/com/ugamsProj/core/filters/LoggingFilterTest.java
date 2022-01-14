@@ -13,7 +13,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package com.ugamsProj.core.filters;
+package com.ugamsproj.core.filters;
 
 import java.io.IOException;
 import java.util.List;
@@ -26,7 +26,6 @@ import org.apache.sling.testing.mock.sling.servlet.MockRequestPathInfo;
 import org.apache.sling.testing.mock.sling.servlet.MockSlingHttpServletRequest;
 import org.apache.sling.testing.mock.sling.servlet.MockSlingHttpServletResponse;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 import io.wcm.testing.mock.aem.junit5.AemContext;
@@ -52,13 +51,13 @@ class LoggingFilterTest {
     }
 
 
-    @Test
+    @org.junit.jupiter.api.Test
     void doFilter(AemContext context) throws IOException, ServletException {
         MockSlingHttpServletRequest request = context.request();
         MockSlingHttpServletResponse response = context.response();
 
         MockRequestPathInfo requestPathInfo = (MockRequestPathInfo) request.getRequestPathInfo();
-        requestPathInfo.setResourcePath("/content/test");
+        requestPathInfo.setResourcePath("/content/Test");
         requestPathInfo.setSelectorString("selectors");
 
         fixture.init(mock(FilterConfig.class));
@@ -70,7 +69,7 @@ class LoggingFilterTest {
         LoggingEvent event = events.get(0);
         assertEquals(Level.DEBUG, event.getLevel());
         assertEquals(2, event.getArguments().size());
-        assertEquals("/content/test", event.getArguments().get(0));
+        assertEquals("/content/Test", event.getArguments().get(0));
         assertEquals("selectors", event.getArguments().get(1));
     }
 }

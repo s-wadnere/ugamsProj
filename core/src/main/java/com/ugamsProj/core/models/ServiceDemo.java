@@ -1,6 +1,4 @@
-package com.ugamsProj.core.models;
-
-import java.util.List;
+package com.ugamsproj.core.models;
 
 public interface ServiceDemo {
     public String getUsersList();

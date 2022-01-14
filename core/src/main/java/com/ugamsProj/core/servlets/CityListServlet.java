@@ -1,4 +1,4 @@
-package com.ugamsProj.core.servlets;
+package com.ugamsproj.core.servlets;
 
 import org.osgi.service.component.annotations.Component;
 import com.adobe.cq.commerce.common.ValueMapDecorator;
@@ -34,9 +34,9 @@ public class CityListServlet extends SlingSafeMethodsServlet{
                         value = fieldVal[0];
                 }
 
-                ValueMap vm = new ValueMapDecorator(new HashMap<String, Object>());
+                ValueMap vm = new ValueMapDecorator(new HashMap<>());
                 vm.put("value", value);
-                List<Resource> resourceList = new ArrayList<Resource>();
+                List<Resource> resourceList = new ArrayList<>();
                 resourceList.add(new ValueMapResource(resourceResolver, new ResourceMetadata(), "nt:unstructured", vm));
                 request.setAttribute(DataSource.class.getName(), new SimpleDataSource(resourceList.iterator()));
         }

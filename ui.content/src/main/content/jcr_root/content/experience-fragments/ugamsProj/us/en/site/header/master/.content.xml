@@ -3,32 +3,32 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:tags="[]"
-        cq:template="/conf/ugamsProj/settings/wcm/templates/xf-web-variation"
+        cq:template="/conf/ugamsproj/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
         cq:xfVariantType="web"
         jcr:primaryType="cq:PageContent"
         jcr:title="Header"
-        sling:resourceType="ugamsProj/components/xfpage">
+        sling:resourceType="ugamsproj/components/xfpage">
         <root
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="ugamsProj/components/container"
+            sling:resourceType="ugamsproj/components/container"
             layout="simple">
             <navigation
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="ugamsProj/components/navigation"
+                sling:resourceType="ugamsproj/components/navigation"
                 collectAllPages="false"
-                navigationRoot="/content/ugamsProj/us/en"
+                navigationRoot="/content/ugamsproj/us/en"
                 skipNavigationRoot="false"
                 structureDepth="1"/>
             <languagenavigation
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="ugamsProj/components/languagenavigation"
-                navigationRoot="/content/ugamsProj/us"
+                sling:resourceType="ugamsproj/components/languagenavigation"
+                navigationRoot="/content/ugamsproj/us"
                 structureDepth="2"/>
             <search
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="ugamsProj/components/search"
-                searchRoot="/content/ugamsProj/us"/>
+                sling:resourceType="ugamsproj/components/search"
+                searchRoot="/content/ugamsproj/us"/>
         </root>
     </jcr:content>
 </jcr:root>

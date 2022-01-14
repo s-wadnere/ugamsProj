@@ -3,12 +3,12 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:template="/conf/ugamsProj/settings/wcm/templates/xf-web-variation"
+        cq:template="/conf/ugamsproj/settings/wcm/templates/xf-web-variation"
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="ugamsProj/components/xfpage">
+        sling:resourceType="ugamsproj/components/xfpage">
         <root
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="ugamsProj/components/container"
+            sling:resourceType="ugamsproj/components/container"
             editable="{Boolean}true"
             layout="responsiveGrid"/>
         <cq:responsive jcr:primaryType="nt:unstructured">

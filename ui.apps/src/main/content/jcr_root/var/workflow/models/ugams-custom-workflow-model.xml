@@ -25,7 +25,7 @@
             type="PROCESS">
             <metaData
                 jcr:primaryType="nt:unstructured"
-                PROCESS="com.ugamsProj.core.models.Impl.UgamProjectWorkflow"
+                PROCESS="com.ugamsproj.core.models.impl.UgamProjectWorkflow"
                 PROCESS_ARGS="approver1: Shraddha"
                 PROCESS_AUTO_ADVANCE="true"/>
         </node1>
@@ -46,8 +46,8 @@
             type="PROCESS">
             <metaData
                 jcr:primaryType="nt:unstructured"
-                PROCESS="com.ugamsProj.core.models.Impl.UgamProjectWorkflow"
-                PROCESS_ARGS="approver2: ugamsProject"
+                PROCESS="com.ugamsproj.core.models.impl.UgamProjectWorkflow"
+                PROCESS_ARGS="approver2: ugamsproject"
                 PROCESS_AUTO_ADVANCE="true"/>
         </node3>
         <node4

@@ -13,7 +13,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package com.ugamsProj.it.tests;
+package com.ugamsproj.it.tests;
 
 import com.adobe.cq.testing.client.CQClient;
 import com.adobe.cq.testing.junit.assertion.CQAssert;

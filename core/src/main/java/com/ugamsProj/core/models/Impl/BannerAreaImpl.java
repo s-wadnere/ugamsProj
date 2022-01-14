@@ -1,8 +1,8 @@
-package com.ugamsProj.core.models.Impl;
+package com.ugamsproj.core.models.impl;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import com.ugamsProj.core.models.BannerArea;
+import com.ugamsproj.core.models.BannerArea;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Exporter;
@@ -22,7 +22,7 @@ import javax.inject.Inject;
 
 @JsonRootName("banner")
 public class BannerAreaImpl implements BannerArea{
-    final protected static String RESOURCE_TYPE="ugamsProj/components/content/banner-area";
+    protected static final String RESOURCE_TYPE="ugamsproj/components/content/banner-area";
 
     @Inject
     String title;

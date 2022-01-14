@@ -21,8 +21,8 @@
     <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>com.ugamsProj</groupId>
-        <artifactId>ugamsProj</artifactId>
+        <groupId>com.ugamsproj</groupId>
+        <artifactId>ugamsproj</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -30,10 +30,10 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>ugamsProj.ui.config</artifactId>
+    <artifactId>ugamsproj.ui.config</artifactId>
     <packaging>content-package</packaging>
-    <name>ugamsProj - UI config</name>
-    <description>UI config package for ugamsProj</description>
+    <name>ugamsproj - UI config</name>
+    <description>UI config package for ugamsproj</description>
 
     <!-- ====================================================================== -->
     <!-- B U I L D   D E F I N I T I O N                                        -->
@@ -50,8 +50,8 @@
                     <showImportPackageReport>false</showImportPackageReport>
                     <repositoryStructurePackages>
                         <repositoryStructurePackage>
-                            <groupId>com.ugamsProj</groupId>
-                            <artifactId>ugamsProj.ui.apps.structure</artifactId>
+                            <groupId>com.ugamsproj</groupId>
+                            <artifactId>ugamsproj.ui.apps.structure</artifactId>
                         </repositoryStructurePackage>
                     </repositoryStructurePackages>
                 </configuration>
@@ -65,8 +65,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.ugamsProj</groupId>
-            <artifactId>ugamsProj.ui.apps.structure</artifactId>
+            <groupId>com.ugamsproj</groupId>
+            <artifactId>ugamsproj.ui.apps.structure</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>

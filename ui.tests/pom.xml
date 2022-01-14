@@ -23,15 +23,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.ugamsProj</groupId>
-        <artifactId>ugamsProj</artifactId>
+        <groupId>com.ugamsproj</groupId>
+        <artifactId>ugamsproj</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>ugamsProj.ui.tests</artifactId>
-    <name>ugamsProj - UI Tests</name>
-    <description>UI Tests for ugamsProj</description>
+    <artifactId>ugamsproj.ui.tests</artifactId>
+    <name>ugamsproj - UI Tests</name>
+    <description>UI Tests for ugamsproj</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

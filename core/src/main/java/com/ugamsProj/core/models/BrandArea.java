@@ -1,4 +1,4 @@
-package com.ugamsProj.core.models;
+package com.ugamsproj.core.models;
 
 import java.util.List;
 

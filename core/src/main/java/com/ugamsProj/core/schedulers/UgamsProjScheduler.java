@@ -1,12 +1,7 @@
-package com.ugamsProj.core.schedulers;
+package com.ugamsproj.core.schedulers;
 
-import com.ugamsProj.core.config.SchedulerConfiguration;
-import com.ugamsProj.core.services.Impl.SchedularServiceImpl;
-import com.ugamsProj.core.services.SchedularService;
-import com.ugamsProj.core.utils.ResolverUtil;
-import org.apache.sling.api.resource.ModifiableValueMap;
-import org.apache.sling.api.resource.Resource;
-import org.apache.sling.api.resource.ResourceResolver;
+import com.ugamsproj.core.config.SchedulerConfiguration;
+import com.ugamsproj.core.services.SchedularService;
 import org.apache.sling.api.resource.ResourceResolverFactory;
 import org.apache.sling.commons.scheduler.ScheduleOptions;
 import org.apache.sling.commons.scheduler.Scheduler;
@@ -18,8 +13,6 @@ import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.metatype.annotations.Designate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import javax.jcr.Session;
 
 @Component(immediate = true, service = Runnable.class)
 @Designate(ocd = SchedulerConfiguration.class)
@@ -37,10 +30,6 @@ public class UgamsProjScheduler implements Runnable{
 
     @OSGiService
     ResourceResolverFactory resourceResolverFactory;
-
-
-    String compPath="/content/ugamsProj/us/en/scheduler/jcr:content/root/container/container/date_time";
-
 
     @Activate
     protected void activate(SchedulerConfiguration config) {
@@ -67,7 +56,12 @@ public class UgamsProjScheduler implements Runnable{
     @Override
     public void run() {
 
+<<<<<<< Updated upstream
         schedularService.getServiceName(compPath);
+=======
+        schedularService.getServiceName("/content/ugamsproj/us/en/scheduler/jcr:content/root/container/container/date_time");
+        LOG.info("\n<-----------Inside Run Method----------->");
+>>>>>>> Stashed changes
     }
 
 }

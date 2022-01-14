@@ -1,24 +1,12 @@
-package com.ugamsProj.core.services.Impl;
+package com.ugamsproj.core.services.impl;
 
 import com.day.cq.commons.date.DateUtil;
 
-import com.ugamsProj.core.services.SchedularService;
-import com.ugamsProj.core.utils.ResolverUtil;
+import com.ugamsproj.core.services.SchedularService;
+import com.ugamsproj.core.utils.ResolverUtil;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ResourceResolverFactory;
-
-import com.ugamsProj.core.config.OSGIConfigDemo;
-import com.ugamsProj.core.config.SchedulerConfiguration;
-import com.ugamsProj.core.schedulers.UgamsProjScheduler;
-import com.ugamsProj.core.services.OSGIConfigService;
-import com.ugamsProj.core.services.SchedularService;
-import com.ugamsProj.core.utils.ResolverUtil;
-import org.apache.sling.api.resource.ModifiableValueMap;
-import org.apache.sling.api.resource.Resource;
-import org.apache.sling.api.resource.ResourceResolver;
-import org.apache.sling.api.resource.ResourceResolverFactory;
-import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
@@ -38,8 +26,7 @@ public class SchedularServiceImpl implements SchedularService {
     @Override
 
     public void getServiceName(String path) {
-        try  {
-            ResourceResolver serviceResourceResolver = ResolverUtil.newResolver(resourceResolverFactory);
+        try ( ResourceResolver serviceResourceResolver = ResolverUtil.newResolver(resourceResolverFactory)) {
             Session session = serviceResourceResolver.adaptTo(Session.class);
             Resource resource = serviceResourceResolver.getResource(path);
 

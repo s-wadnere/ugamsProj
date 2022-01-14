@@ -4,11 +4,11 @@
     <item_1
         jcr:primaryType="nt:unstructured"
         jcr:title="Tab 1"
-        sling:resourceType="ugamsProj/components/container"
+        sling:resourceType="ugamsproj/components/container"
         layout="responsiveGrid"/>
     <item_2
         jcr:primaryType="nt:unstructured"
         jcr:title="Tab 2"
-        sling:resourceType="ugamsProj/components/container"
+        sling:resourceType="ugamsproj/components/container"
         layout="responsiveGrid"/>
 </jcr:root>

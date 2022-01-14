@@ -1,11 +1,11 @@
-package com.ugamsProj.core.config;
+package com.ugamsproj.core.config;
 
 import org.osgi.service.metatype.annotations.AttributeDefinition;
 import org.osgi.service.metatype.annotations.AttributeType;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 import org.osgi.service.metatype.annotations.Option;
 
-@ObjectClassDefinition(name="UgamsProject - OSGi Configuration",
+@ObjectClassDefinition(name="ugamsproject - OSGi Configuration",
         description = " OSGi Configuration Demo")
 public @interface OSGIConfigDemo {
     @AttributeDefinition(

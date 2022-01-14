@@ -7,18 +7,18 @@
         cq:lastRolledout="{Date}2021-12-10T16:12:19.424+05:30"
         cq:lastRolledoutBy="msm-service"
         cq:tags="[]"
-        cq:template="/conf/ugamsProj/settings/wcm/templates/customxf-template"
+        cq:template="/conf/ugamsproj/settings/wcm/templates/customxf-template"
         cq:xfVariantType="web"
         jcr:mixinTypes="[cq:LiveRelationship,cq:LiveSync]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Portfolio Live Copy Variation"
-        sling:resourceType="ugamsProj/components/xfpage">
+        sling:resourceType="ugamsproj/components/xfpage">
         <root
             cq:lastRolledout="{Date}2021-12-10T16:12:19.094+05:30"
             cq:lastRolledoutBy="msm-service"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="ugamsProj/components/container"
+            sling:resourceType="ugamsproj/components/container"
             layout="responsiveGrid">
             <responsivegrid
                 cq:lastRolledout="{Date}2021-12-10T16:12:19.124+05:30"
@@ -44,7 +44,7 @@
                     jcr:lastModifiedBy="admin"
                     jcr:mixinTypes="[cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="ugamsProj/components/content/title-text"
+                    sling:resourceType="ugamsproj/components/content/title-text"
                     bottomPadding="true"
                     color="false"
                     sectionGap="true"
@@ -79,7 +79,7 @@
                             jcr:lastModifiedBy="admin"
                             jcr:mixinTypes="[cq:LiveRelationship]"
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="ugamsProj/components/content/portfolio-teaser"
+                            sling:resourceType="ugamsproj/components/content/portfolio-teaser"
                             img="/content/dam/ugams/p2.jpg"
                             portfolioText="2D Vinyl Design"
                             portfolioTitle="vector">
@@ -106,7 +106,7 @@
                             jcr:lastModifiedBy="admin"
                             jcr:mixinTypes="[cq:LiveRelationship]"
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="ugamsProj/components/content/portfolio-teaser"
+                            sling:resourceType="ugamsproj/components/content/portfolio-teaser"
                             img="/content/dam/ugams/p2.jpg"
                             portfolioText="2D Vinyl Design"
                             portfolioTitle="vector">
@@ -133,7 +133,7 @@
                             jcr:lastModifiedBy="admin"
                             jcr:mixinTypes="[cq:LiveRelationship]"
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="ugamsProj/components/content/portfolio-teaser"
+                            sling:resourceType="ugamsproj/components/content/portfolio-teaser"
                             img="/content/dam/ugams/p6.jpg"
                             portfolioText="2D Vinyl Design"
                             portfolioTitle="raster">
@@ -157,7 +157,7 @@
         </root>
         <cq:LiveSyncConfig
             cq:isDeep="{Boolean}true"
-            cq:master="/content/experience-fragments/ugamsProj/us/en/site/portfolio-experience-fragment/master"
+            cq:master="/content/experience-fragments/ugamsproj/us/en/site/portfolio-experience-fragment/master"
             cq:rolloutConfigs="[/libs/msm/launches/rolloutconfigs/pushonmodifyshallow]"
             jcr:primaryType="cq:LiveCopy"/>
     </jcr:content>

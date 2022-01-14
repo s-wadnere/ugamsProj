@@ -3,7 +3,7 @@
     jcr:mixinTypes="[rep:AccessControllable]"
     jcr:primaryType="cq:Page">
     <rep:policy/>
-    <ugamsProj jcr:primaryType="nt:unstructured">
+    <ugamsproj jcr:primaryType="nt:unstructured">
         <components jcr:primaryType="nt:unstructured">
             <form jcr:primaryType="nt:unstructured">
                 <container jcr:primaryType="nt:unstructured">
@@ -12,7 +12,7 @@
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Content Form"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[/apps/ugamsProj/components/form/button,/apps/ugamsProj/components/form/hidden,/apps/ugamsProj/components/form/options,/apps/ugamsProj/components/form/text]">
+                        components="[/apps/ugamsproj/components/form/button,/apps/ugamsproj/components/form/hidden,/apps/ugamsproj/components/form/options,/apps/ugamsproj/components/form/text]">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </form-container>
                 </container>
@@ -20,9 +20,9 @@
             <languagenavigation jcr:primaryType="nt:unstructured">
                 <policy_xfm
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="ugamsProj Language Navigation - Experience Fragment"
+                    jcr:title="ugamsproj Language Navigation - Experience Fragment"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    navigationRoot="/content/ugamsProj"
+                    navigationRoot="/content/ugamsproj"
                     structureDepth="1">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_xfm>
@@ -210,7 +210,7 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Root"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:ugamsProj - Content,/apps/ugamsProj/components/form/container,group:ugamsProj - Structure]">
+                    components="[group:ugamsproj - Content,/apps/ugamsproj/components/form/container,group:ugamsproj - Structure]">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -219,19 +219,19 @@
                                 assetGroup="media"
                                 assetMimetype="image/*"
                                 droptarget="image"
-                                resourceType="ugamsProj/components/image"/>
+                                resourceType="ugamsproj/components/image"/>
                             <mapping_1575030843388
                                 jcr:primaryType="nt:unstructured"
                                 assetGroup="content"
                                 assetMimetype="text/html"
                                 droptarget="experiencefragment"
-                                resourceType="ugamsProj/components/experiencefragment"/>
+                                resourceType="ugamsproj/components/experiencefragment"/>
                             <mapping_1575030853128
                                 jcr:primaryType="nt:unstructured"
                                 assetGroup="media"
                                 assetMimetype="[text/html,application/vnd.adobe.contentfragment]"
                                 droptarget="contentfragment"
-                                resourceType="ugamsProj/components/contentfragment"/>
+                                resourceType="ugamsproj/components/contentfragment"/>
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1574694950110>
@@ -240,7 +240,7 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Content"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:ugamsProj - Content,/apps/ugamsProj/components/form/container]">
+                    components="[group:ugamsproj - Content,/apps/ugamsproj/components/form/container]">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -249,19 +249,19 @@
                                 assetGroup="media"
                                 assetMimetype="image/*"
                                 droptarget="image"
-                                resourceType="ugamsProj/components/image"/>
+                                resourceType="ugamsproj/components/image"/>
                             <mapping_1575030260142
                                 jcr:primaryType="nt:unstructured"
                                 assetGroup="content"
                                 assetMimetype="text/html"
                                 droptarget="experiencefragment"
-                                resourceType="ugamsProj/components/experiencefragment"/>
+                                resourceType="ugamsproj/components/experiencefragment"/>
                             <mapping_1575030269139
                                 jcr:primaryType="nt:unstructured"
                                 assetGroup="media"
                                 assetMimetype="[text/html,application/vnd.adobe.contentfragment]"
                                 droptarget="contentfragment"
-                                resourceType="ugamsProj/components/contentfragment"/>
+                                resourceType="ugamsproj/components/contentfragment"/>
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1574695586800>
@@ -278,7 +278,7 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="XF Root"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:ugamsProj - Content,/apps/ugamsProj/components/form/container]">
+                    components="[group:ugamsproj - Content,/apps/ugamsproj/components/form/container]">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -287,19 +287,19 @@
                                 assetGroup="media"
                                 assetMimetype="image/*"
                                 droptarget="image"
-                                resourceType="ugamsProj/components/image"/>
+                                resourceType="ugamsproj/components/image"/>
                             <mapping_1575030843388
                                 jcr:primaryType="nt:unstructured"
                                 assetGroup="content"
                                 assetMimetype="text/html"
                                 droptarget="experiencefragment"
-                                resourceType="ugamsProj/components/experiencefragment"/>
+                                resourceType="ugamsproj/components/experiencefragment"/>
                             <mapping_1575030853128
                                 jcr:primaryType="nt:unstructured"
                                 assetGroup="media"
                                 assetMimetype="[text/html,application/vnd.adobe.contentfragment]"
                                 droptarget="contentfragment"
-                                resourceType="ugamsProj/components/contentfragment"/>
+                                resourceType="ugamsproj/components/contentfragment"/>
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1575040440977>
@@ -334,11 +334,11 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Generic Page"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    clientlibs="[ugamsProj.dependencies,ugamsProj.site]"
-                    clientlibsJsHead="ugamsProj.dependencies">
+                    clientlibs="[ugamsproj.dependencies,ugamsproj.site]"
+                    clientlibsJsHead="ugamsproj.dependencies">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
         </components>
-    </ugamsProj>
+    </ugamsproj>
 </jcr:root>

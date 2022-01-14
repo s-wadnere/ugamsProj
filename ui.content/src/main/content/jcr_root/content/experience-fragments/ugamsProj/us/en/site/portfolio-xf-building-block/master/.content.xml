@@ -5,20 +5,20 @@
         cq:lastModified="{Date}2021-12-10T16:12:44.167+05:30"
         cq:lastModifiedBy="admin"
         cq:tags="[]"
-        cq:template="/conf/ugamsProj/settings/wcm/templates/customxf-template"
+        cq:template="/conf/ugamsproj/settings/wcm/templates/customxf-template"
         cq:xfMasterVariation="{Boolean}true"
         cq:xfVariantType="web"
         jcr:primaryType="cq:PageContent"
         jcr:title="Portfolio XF Building Block"
-        sling:resourceType="ugamsProj/components/xfpage">
+        sling:resourceType="ugamsproj/components/xfpage">
         <root
             jcr:lastModified="{Date}2021-12-08T23:46:44.962+05:30"
             jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="ugamsProj/components/container"
+            sling:resourceType="ugamsproj/components/container"
             layout="responsiveGrid">
             <buildingblock
-                cq:masterBuildingBlockPath="/content/experience-fragments/ugamsProj/us/en/site/portfolio-experience-fragment/master/jcr:content/root/responsivegrid/portfolio_teaser/portfolio_teaser447359792851600"
+                cq:masterBuildingBlockPath="/content/experience-fragments/ugamsproj/us/en/site/portfolio-experience-fragment/master/jcr:content/root/responsivegrid/portfolio_teaser/portfolio_teaser447359792851600"
                 jcr:created="{Date}2021-12-10T12:55:00.357+05:30"
                 jcr:createdBy="admin"
                 jcr:lastModified="{Date}2021-12-10T12:55:00.357+05:30"
@@ -29,7 +29,7 @@
                     jcr:lastModified="{Date}2021-12-10T16:12:18.503+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="ugamsProj/components/content/portfolio-teaser"
+                    sling:resourceType="ugamsproj/components/content/portfolio-teaser"
                     img="/content/dam/ugams/p2.jpg"
                     portfolioText="2D Vinyl Design"
                     portfolioTitle="vector">
@@ -46,7 +46,7 @@
                     jcr:lastModified="{Date}2021-12-08T23:24:36.700+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="ugamsProj/components/content/portfolio-teaser"
+                    sling:resourceType="ugamsproj/components/content/portfolio-teaser"
                     img="/content/dam/ugams/p2.jpg"
                     portfolioText="2D Vinyl Design"
                     portfolioTitle="vector">
@@ -63,7 +63,7 @@
                     jcr:lastModified="{Date}2021-12-08T23:24:47.274+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="ugamsProj/components/content/portfolio-teaser"
+                    sling:resourceType="ugamsproj/components/content/portfolio-teaser"
                     img="/content/dam/ugams/p6.jpg"
                     portfolioText="2D Vinyl Design"
                     portfolioTitle="raster">
@@ -76,7 +76,7 @@
                 </item450174318224100>
             </buildingblock>
             <buildingblock_751723728
-                cq:masterBuildingBlockPath="/content/experience-fragments/ugamsProj/us/en/site/portfolio-experience-fragment/master/jcr:content/root/responsivegrid/portfolio_teaser/portfolio_teaser447359792851600"
+                cq:masterBuildingBlockPath="/content/experience-fragments/ugamsproj/us/en/site/portfolio-experience-fragment/master/jcr:content/root/responsivegrid/portfolio_teaser/portfolio_teaser447359792851600"
                 jcr:created="{Date}2021-12-10T16:12:44.072+05:30"
                 jcr:createdBy="admin"
                 jcr:lastModified="{Date}2021-12-10T16:12:44.072+05:30"
@@ -87,7 +87,7 @@
                     jcr:lastModified="{Date}2021-12-10T16:12:18.503+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="ugamsProj/components/content/portfolio-teaser"
+                    sling:resourceType="ugamsproj/components/content/portfolio-teaser"
                     img="/content/dam/ugams/p2.jpg"
                     portfolioText="2D Vinyl Design"
                     portfolioTitle="vector">
@@ -104,7 +104,7 @@
                     jcr:lastModified="{Date}2021-12-08T23:24:36.700+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="ugamsProj/components/content/portfolio-teaser"
+                    sling:resourceType="ugamsproj/components/content/portfolio-teaser"
                     img="/content/dam/ugams/p2.jpg"
                     portfolioText="2D Vinyl Design"
                     portfolioTitle="vector">
@@ -121,7 +121,7 @@
                     jcr:lastModified="{Date}2021-12-08T23:24:47.274+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="ugamsProj/components/content/portfolio-teaser"
+                    sling:resourceType="ugamsproj/components/content/portfolio-teaser"
                     img="/content/dam/ugams/p6.jpg"
                     portfolioText="2D Vinyl Design"
                     portfolioTitle="raster">

@@ -2,15 +2,15 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:allowedTemplates="[/conf/ugamsProj/settings/wcm/templates/(?!xf-).*]"
-        cq:conf="/conf/ugamsProj"
+        cq:allowedTemplates="[/conf/ugamsproj/settings/wcm/templates/(?!xf-).*]"
+        cq:conf="/conf/ugamsproj"
         jcr:primaryType="cq:PageContent"
-        jcr:title="ugamsProj"
-        sling:configRef="/conf/ugamsProj"
+        jcr:title="ugamsproj"
+        sling:configRef="/conf/ugamsproj"
         sling:redirect="{Boolean}true"
         sling:redirectStatus="{Long}302"
         sling:resourceType="foundation/components/redirect"
-        redirectTarget="/content/ugamsProj/us/en">
+        redirectTarget="/content/ugamsproj/us/en">
         <image jcr:primaryType="nt:unstructured">
             <file/>
         </image>

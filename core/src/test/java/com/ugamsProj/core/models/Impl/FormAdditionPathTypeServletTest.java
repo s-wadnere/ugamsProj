@@ -1,4 +1,4 @@
-package com.ugamsProj.core.models.Impl;
+package com.ugamsproj.core.models.impl;
 
 import io.wcm.testing.mock.aem.junit5.AemContext;
 import io.wcm.testing.mock.aem.junit5.AemContextExtension;

@@ -6,9 +6,9 @@
         cq:lastModifiedBy="admin"
         cq:template="/libs/wcm/msm/templates/blueprint"
         jcr:primaryType="nt:unstructured"
-        jcr:title="ugamsProj-Blueprint"
+        jcr:title="ugamsproj-Blueprint"
         sling:resourceType="wcm/msm/components/blueprint"
-        sitePath="/content/ugamsProj/us">
+        sitePath="/content/ugamsproj/us">
         <dialog/>
     </jcr:content>
     <rolloutconfigs/>

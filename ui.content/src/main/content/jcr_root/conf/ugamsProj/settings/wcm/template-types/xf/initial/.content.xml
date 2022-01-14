@@ -3,13 +3,13 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:tags="[experience-fragments:variation/web]"
-        cq:template="/conf/ugamsProj/settings/wcm/templates/empty-experience-fragment"
+        cq:template="/conf/ugamsproj/settings/wcm/templates/empty-experience-fragment"
         cq:xfVariantType="web"
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="ugamsProj/components/xfpage">
+        sling:resourceType="ugamsproj/components/xfpage">
         <root
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="ugamsProj/components/container"
+            sling:resourceType="ugamsproj/components/container"
             layout="responsiveGrid"/>
     </jcr:content>
 </jcr:root>

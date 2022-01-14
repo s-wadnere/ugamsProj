@@ -1,4 +1,4 @@
-package com.ugamsProj.core.models;
+package com.ugamsproj.core.models;
 
 public interface TitleText {
     String getTitle();

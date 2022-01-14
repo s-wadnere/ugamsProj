@@ -1,4 +1,4 @@
-package com.ugamsProj.core.services;
+package com.ugamsproj.core.services;
 
 public interface SchedularService {
 

@@ -13,12 +13,11 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package com.ugamsProj.core.models;
+package com.ugamsproj.core.models;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.resource.Resource;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 import com.day.cq.wcm.api.Page;
@@ -29,7 +28,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
- * Simple JUnit test verifying the HelloWorldModel
+ * Simple JUnit Test verifying the HelloWorldModel
  */
 @ExtendWith(AemContextExtension.class)
 class HelloWorldModelTest {
@@ -42,16 +41,16 @@ class HelloWorldModelTest {
     @BeforeEach
     public void setup(AemContext context) throws Exception {
 
-        // prepare a page with a test resource
+        // prepare a page with a Test resource
         page = context.create().page("/content/mypage");
         resource = context.create().resource(page, "hello",
-            "sling:resourceType", "ugamsProj/components/helloworld");
+            "sling:resourceType", "ugamsproj/components/helloworld");
 
         // create sling model
         hello = resource.adaptTo(HelloWorldModel.class);
     }
 
-    @Test
+    @org.junit.jupiter.api.Test
     void testGetMessage() throws Exception {
         // some very basic junit tests
         String msg = hello.getMessage();

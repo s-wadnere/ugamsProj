@@ -1,7 +1,7 @@
-package com.ugamsProj.core.models.Impl;
+package com.ugamsproj.core.models.impl;
 
 
-import com.ugamsProj.core.models.BrandArea;
+import com.ugamsproj.core.models.BrandArea;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
@@ -21,7 +21,7 @@ public class BrandAreaImpl implements BrandArea{
     public List<String> getImgPath() {
         if(imgPath!=null)
         {
-            return new ArrayList<String>(imgPath);
+            return new ArrayList<>(imgPath);
         }
         else
         {

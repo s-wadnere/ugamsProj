@@ -15,7 +15,7 @@
         contentFragment="{Boolean}true"
         lastFragmentSave="{Date}2021-12-13T13:22:19.389+05:30">
         <data
-            cq:model="/conf/ugamsProj/settings/dam/cfm/models/ugams-cf-model"
+            cq:model="/conf/ugamsproj/settings/dam/cfm/models/ugams-cf-model"
             jcr:primaryType="nt:unstructured">
             <master
                 jcr:mixinTypes="[cq:Taggable]"

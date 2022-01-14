@@ -14,6 +14,6 @@
  *  limitations under the License.
  */
 @Version("1.0")
-package com.ugamsProj.core.filters;
+package com.ugamsproj.core.filters;
 
 import org.osgi.annotation.versioning.Version;

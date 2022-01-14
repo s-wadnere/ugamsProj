@@ -9,7 +9,7 @@
             propertyName="./fileReference">
             <parameters
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="ugamsProj/components/image"
+                sling:resourceType="ugamsproj/components/image"
                 imageCrop=""
                 imageMap=""
                 imageRotate=""/>

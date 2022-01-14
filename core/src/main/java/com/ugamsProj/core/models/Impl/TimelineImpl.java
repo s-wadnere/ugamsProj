@@ -1,8 +1,8 @@
-package com.ugamsProj.core.models.Impl;
+package com.ugamsproj.core.models.impl;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import com.ugamsProj.core.models.Timeline;
+import com.ugamsproj.core.models.Timeline;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.*;
 import org.apache.sling.models.annotations.injectorspecific.ChildResource;
@@ -26,7 +26,7 @@ import java.util.Map;
 @JsonRootName("timeline")
 public class TimelineImpl implements Timeline{
 
-    final protected static String RESOURCE_TYPE="ugamsProj/components/content/timeline";
+    protected static final String RESOURCE_TYPE="ugamsproj/components/content/timeline";
 
     @ChildResource
     Resource timelinemulti;
@@ -48,7 +48,11 @@ public class TimelineImpl implements Timeline{
         return timeLineMap;
     }
 
+<<<<<<< Updated upstream
    /*@JsonProperty(value="Result")
     public String Result(){return "timeline";}*/
+=======
+
+>>>>>>> Stashed changes
 
 }

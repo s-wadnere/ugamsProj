@@ -1,8 +1,8 @@
-package com.ugamsProj.core.models.Impl;
+package com.ugamsproj.core.models.impl;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import com.ugamsProj.core.models.HomeAbout;
+import com.ugamsproj.core.models.HomeAbout;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Exporter;
@@ -23,7 +23,7 @@ import javax.inject.Inject;
 @JsonRootName("HomeAbout_Component")
 public class HomeAboutImpl implements HomeAbout{
 
-    final protected static String RESOURCE_TYPE="ugamsProj/components/content/home-about";
+    protected static final String RESOURCE_TYPE="ugamsproj/components/content/home-about";
 
     @Inject
     String title;

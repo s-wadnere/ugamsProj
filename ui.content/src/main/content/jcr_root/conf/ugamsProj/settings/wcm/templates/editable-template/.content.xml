@@ -4,7 +4,7 @@
     <jcr:content
         cq:lastModified="{Date}2021-12-02T15:32:57.029+05:30"
         cq:lastModifiedBy="admin"
-        cq:templateType="/conf/ugamsProj/settings/wcm/template-types/Empty Page"
+        cq:templateType="/conf/ugamsproj/settings/wcm/template-types/Empty Page"
         jcr:primaryType="cq:PageContent"
         jcr:title="Editable template"
         status="enabled"/>

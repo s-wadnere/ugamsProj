@@ -1,10 +1,10 @@
-package com.ugamsProj.core.models.Impl;
+package com.ugamsproj.core.models.impl;
 
 import com.day.cq.commons.date.DateUtil;
 import com.day.cq.commons.date.InvalidDateException;
 import com.day.cq.replication.*;
-import com.ugamsProj.core.services.SchedularService;
-import com.ugamsProj.core.utils.ResolverUtil;
+import com.ugamsproj.core.services.SchedularService;
+import com.ugamsproj.core.utils.ResolverUtil;
 import org.apache.sling.api.resource.LoginException;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
@@ -27,8 +27,11 @@ public class ReplicationProcessor implements Preprocessor {
     @Reference
     SchedularService schedularService;
 
+<<<<<<< Updated upstream
     String compPath = "/content/ugamsProj/us/en/scheduler/jcr:content/root/container/container/date_time";
 
+=======
+>>>>>>> Stashed changes
     @Override
     public void preprocess(ReplicationAction replicationAction, ReplicationOptions replicationOptions) throws ReplicationException {
 
@@ -36,6 +39,7 @@ public class ReplicationProcessor implements Preprocessor {
             return;
         }
         String path = replicationAction.getPath();
+<<<<<<< Updated upstream
         if (path.equals("/content/ugamsProj/us/en/scheduler")) {
             //log.debug("==========Preprocessor Triggered============");
 
@@ -43,12 +47,27 @@ public class ReplicationProcessor implements Preprocessor {
             try {
                 //log.debug("===============inside try====================");
                 serviceResourceResolver = ResolverUtil.newResolver(resourceResolverFactory);
+=======
+        if(path.equals("/content/ugamsproj/us/en/scheduler")){
+            log.debug("==========Preprocessor Triggered============");
+
+
+            try(ResourceResolver serviceResourceResolver  = ResolverUtil.newResolver(resourceResolverFactory)) {
+                log.debug("===============inside try====================");
+>>>>>>> Stashed changes
                 Session session = serviceResourceResolver.adaptTo(Session.class);
-                Resource resource = serviceResourceResolver.getResource(compPath);
+                Resource resource = serviceResourceResolver.getResource("/content/ugamsproj/us/en/scheduler/jcr:content/root/container/container/date_time");
                 Node node = resource.adaptTo(Node.class);
+<<<<<<< Updated upstream
                 if (node.getProperty("time") != DateUtil.parseISO8601(DateUtil.getISO8601Date(Calendar.getInstance()))) {
                     //log.debug("===============inside if====================");
                     schedularService.getServiceName(compPath);
+=======
+                if(node.getProperty("time") != DateUtil.parseISO8601(DateUtil.getISO8601Date(Calendar.getInstance())))
+                {
+                    log.debug("===============inside if====================");
+                    schedularService.getServiceName("/content/ugamsproj/us/en/scheduler/jcr:content/root/container/container/date_time");
+>>>>>>> Stashed changes
                 }
                 session.save();
                 session.logout();

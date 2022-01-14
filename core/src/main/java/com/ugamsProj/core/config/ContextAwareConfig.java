@@ -1,9 +1,9 @@
-package com.ugamsProj.core.config;
+package com.ugamsproj.core.config;
 
 import org.apache.sling.caconfig.annotation.Configuration;
 import org.apache.sling.caconfig.annotation.Property;
 
-@Configuration(label = "UgamsProj - CA Configuration",description = "Context Aware Configuration for ugamsProj")
+@Configuration(label = "ugamsproj - CA Configuration",description = "Context Aware Configuration for ugamsproj")
 public @interface ContextAwareConfig {
 
     @Property(label ="Country site",description = "Site Name")

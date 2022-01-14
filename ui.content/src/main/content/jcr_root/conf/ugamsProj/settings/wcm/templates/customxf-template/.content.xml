@@ -4,7 +4,7 @@
     <jcr:content
         cq:lastModified="{Date}2021-12-10T13:46:22.452+05:30"
         cq:lastModifiedBy="admin"
-        cq:templateType="/conf/ugamsProj/settings/wcm/template-types/customXF"
+        cq:templateType="/conf/ugamsproj/settings/wcm/template-types/customXF"
         jcr:primaryType="cq:PageContent"
         jcr:title="CustomXF Template"
         status="enabled"/>

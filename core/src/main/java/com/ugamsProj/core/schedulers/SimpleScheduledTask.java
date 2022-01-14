@@ -13,7 +13,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package com.ugamsProj.core.schedulers;
+package com.ugamsproj.core.schedulers;
 
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
@@ -37,11 +37,11 @@ public class SimpleScheduledTask implements Runnable {
     public static @interface Config {
 
         @AttributeDefinition(name = "Cron-job expression")
-        String scheduler_expression() default "*/30 * * * * ?";
+        String schedulerexpression() default "*/30 * * * * ?";
 
         @AttributeDefinition(name = "Concurrent task",
                              description = "Whether or not to schedule this task concurrently")
-        boolean scheduler_concurrent() default false;
+        boolean schedulerconcurrent() default false;
 
         @AttributeDefinition(name = "A parameter",
                              description = "Can be configured in /system/console/configMgr")

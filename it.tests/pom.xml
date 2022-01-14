@@ -18,15 +18,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.ugamsProj</groupId>
-        <artifactId>ugamsProj</artifactId>
+        <groupId>com.ugamsproj</groupId>
+        <artifactId>ugamsproj</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>ugamsProj.it.tests</artifactId>
-    <name>ugamsProj - Integration Tests</name>
-    <description>Integration Tests for ugamsProj</description>
+    <artifactId>ugamsproj.it.tests</artifactId>
+    <name>ugamsproj - Integration Tests</name>
+    <description>Integration Tests for ugamsproj</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

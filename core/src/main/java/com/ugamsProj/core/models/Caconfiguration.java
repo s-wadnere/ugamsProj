@@ -1,4 +1,4 @@
-package com.ugamsProj.core.models;
+package com.ugamsproj.core.models;
 
 public interface Caconfiguration {
     public String getSiteCountry();

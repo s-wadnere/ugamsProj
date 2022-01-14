@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/apps/ugamsProj/clientlibs"/>
-    <filter root="/apps/ugamsProj/components"/>
-    <filter root="/apps/ugamsProj/i18n"/>
+    <filter root="/apps/ugamsproj/clientlibs"/>
+    <filter root="/apps/ugamsproj/components"/>
+    <filter root="/apps/ugamsproj/i18n"/>
 </workspaceFilter>

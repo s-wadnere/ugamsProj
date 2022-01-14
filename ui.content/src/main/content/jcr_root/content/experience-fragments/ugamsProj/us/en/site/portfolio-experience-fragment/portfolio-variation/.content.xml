@@ -5,14 +5,14 @@
         cq:lastModified="{Date}2021-12-10T10:40:32.732+05:30"
         cq:lastModifiedBy="admin"
         cq:tags="[]"
-        cq:template="/conf/ugamsProj/settings/wcm/templates/customxf-template"
+        cq:template="/conf/ugamsproj/settings/wcm/templates/customxf-template"
         cq:xfVariantType="web"
         jcr:primaryType="cq:PageContent"
         jcr:title="Portfolio variation"
-        sling:resourceType="ugamsProj/components/xfpage">
+        sling:resourceType="ugamsproj/components/xfpage">
         <root
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="ugamsProj/components/container"
+            sling:resourceType="ugamsproj/components/container"
             layout="responsiveGrid">
             <responsivegrid
                 jcr:created="{Date}2021-06-21T14:08:17.305+05:30"
@@ -28,7 +28,7 @@
                     jcr:lastModified="{Date}2021-06-22T16:45:12.315+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="ugamsProj/components/content/title-text"
+                    sling:resourceType="ugamsproj/components/content/title-text"
                     bottomPadding="true"
                     color="false"
                     sectionGap="true"
@@ -40,7 +40,7 @@
                     jcr:lastModified="{Date}2021-12-08T22:52:57.887+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="ugamsProj/components/content/portfolio-teaser"
+                    sling:resourceType="ugamsproj/components/content/portfolio-teaser"
                     img="/content/dam/ugams/p1.jpg"
                     portfolioText="2D Vinyl Design"
                     portfolioTitle="vector">
@@ -57,7 +57,7 @@
                     jcr:lastModified="{Date}2021-12-08T22:53:07.960+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="ugamsProj/components/content/portfolio-teaser"
+                    sling:resourceType="ugamsproj/components/content/portfolio-teaser"
                     img="/content/dam/ugams/p2.jpg"
                     portfolioText="2D Vinyl Design"
                     portfolioTitle="vector">
@@ -74,7 +74,7 @@
                     jcr:lastModified="{Date}2021-12-08T23:25:34.500+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="ugamsProj/components/content/portfolio-teaser"
+                    sling:resourceType="ugamsproj/components/content/portfolio-teaser"
                     img="/content/dam/ugams/p6.jpg"
                     portfolioText="Creative Poster Design"
                     portfolioTitle="Agency">

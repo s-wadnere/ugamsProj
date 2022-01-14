@@ -1,6 +1,6 @@
-package com.ugamsProj.core.models.Impl;
+package com.ugamsproj.core.models.impl;
 
-import com.ugamsProj.core.models.Price;
+import com.ugamsproj.core.models.Price;
 import io.wcm.testing.mock.aem.junit5.AemContext;
 import io.wcm.testing.mock.aem.junit5.AemContextExtension;
 import org.apache.sling.testing.mock.sling.ResourceResolverType;

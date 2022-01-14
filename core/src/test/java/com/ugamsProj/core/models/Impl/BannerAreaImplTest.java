@@ -1,7 +1,6 @@
-package com.ugamsProj.core.models.Impl;
+package com.ugamsproj.core.models.impl;
 
-import com.ugamsProj.core.models.BannerArea;
-import com.ugamsProj.core.models.Price;
+import com.ugamsproj.core.models.BannerArea;
 import io.wcm.testing.mock.aem.junit5.AemContext;
 import io.wcm.testing.mock.aem.junit5.AemContextExtension;
 import org.apache.sling.api.resource.Resource;
@@ -55,13 +54,13 @@ class BannerAreaImplTest {
     void getImg() {
         Resource json = aemContext.currentResource("/content/banner");
         BannerArea bannerArea = json.adaptTo(BannerArea.class);
-        assertEquals("/content/dam/ugamsProj/hero-img.png", bannerArea.getImg());
+        assertEquals("/content/dam/ugamsproj/hero-img.png", bannerArea.getImg());
     }
 
     @Test
     void getBannerAreaPathField() {
         Resource json = aemContext.currentResource("/content/banner");
         BannerArea bannerArea = json.adaptTo(BannerArea.class);
-        assertEquals("/content/ugamsProj/us/en/about", bannerArea.getBannerAreaPathField());
+        assertEquals("/content/ugamsproj/us/en/about", bannerArea.getBannerAreaPathField());
     }
 }

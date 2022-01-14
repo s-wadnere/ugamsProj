@@ -1,11 +1,11 @@
-package com.ugamsProj.core.models.Impl;
+package com.ugamsproj.core.models.impl;
 import com.day.cq.search.PredicateGroup;
 import com.day.cq.search.Query;
 import com.day.cq.search.QueryBuilder;
 import com.day.cq.search.result.Hit;
 import com.day.cq.search.result.SearchResult;
-import com.ugamsProj.core.models.ServiceDemo;
-import com.ugamsProj.core.utils.ResolverUtil;
+import com.ugamsproj.core.models.ServiceDemo;
+import com.ugamsproj.core.utils.ResolverUtil;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.LoginException;
 import org.apache.sling.api.resource.ResourceResolver;
@@ -18,7 +18,6 @@ import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import javax.jcr.RepositoryException;
 import javax.jcr.Session;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -30,7 +29,7 @@ public class ServiceDemoImpl implements ServiceDemo {
 
     @Inject
     private ResourceResolverFactory resourceResolverFactory;
-    final Logger LOG = LoggerFactory.getLogger(ServiceDemoImpl.class);
+    final Logger logger = LoggerFactory.getLogger(ServiceDemoImpl.class);
     @Inject
     ResourceResolver resolver;
     @Inject
@@ -38,12 +37,16 @@ public class ServiceDemoImpl implements ServiceDemo {
     String user = " ";
     /*@PostConstruct
     protected void init(){
+<<<<<<< Updated upstream
         LOG.info("\n printing Model logs");
     }*/
+=======
+        logger.info("\n printing Model logs");
+    }
+>>>>>>> Stashed changes
 
     @Override
     public String getUsersList() {
-        List<String> usernames = new ArrayList<>();
         Map<String, String> userMap = new HashMap<>();
         userMap.put("p.hits", "selective");
         userMap.put("p.limit", "-1");
@@ -52,20 +55,32 @@ public class ServiceDemoImpl implements ServiceDemo {
         userMap.put("path", "/home/users");
         userMap.put("type", "rep:User");
         userMap.put("p.properties", "rep:principalName");
+<<<<<<< Updated upstream
         try{
             //LOG.info("\n Inside Try..");
             ResourceResolver serviceResourceResolver = ResolverUtil.newResolver(resourceResolverFactory);
             // LOG.info("\n resolver hit "+serviceResourceResolver.getUserID());
+=======
+        try(ResourceResolver serviceResourceResolver = ResolverUtil.newResolver(resourceResolverFactory)){
+            logger.info("\n Inside Try..");
+>>>>>>> Stashed changes
             Session session = serviceResourceResolver.adaptTo(Session.class);
             Query userQuery = queryBuilder.createQuery(PredicateGroup.create(userMap), session);
             SearchResult result = userQuery.getResult();
-            List<Hit> Hits = result.getHits();
-            for (Hit hit : Hits) {
+            List<Hit> hits = result.getHits();
+            for (Hit hit : hits) {
 
-                user = user + "\r\n" + hit.getProperties().get("rep:principalName", String.class);
+                user = user.concat("\r\n").concat(hit.getProperties().get("rep:principalName", String.class));
             }
+<<<<<<< Updated upstream
         } catch (RepositoryException | LoginException e) {
             LOG.info("Service User ERROR",e.getMessage());
+=======
+        } catch (RepositoryException e) {
+            logger.info(e.getMessage());
+        } catch (LoginException e) {
+            e.printStackTrace();
+>>>>>>> Stashed changes
         }
         return user;
     }
