@@ -65,6 +65,7 @@ public class UserSingleImpl implements UserSingle{
 
     @Override
     public String getAvatar() {
-        return avatar;
+        String path=avatar.replaceAll("https://reqres.in/img/faces/","/content/dam/ugamsproj/");
+        return path;
     }
 }
