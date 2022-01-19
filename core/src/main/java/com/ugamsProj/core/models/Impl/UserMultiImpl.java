@@ -1,10 +1,13 @@
 package com.ugamsProj.core.models.Impl;
 
+import com.ugamsProj.core.config.UserApiConfig;
 import com.ugamsProj.core.models.UserMulti;
+import com.ugamsProj.core.services.UserApiConfigService;
 import com.ugamsProj.core.utils.Network;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -20,6 +23,10 @@ public class UserMultiImpl implements UserMulti {
     final Logger log = LoggerFactory.getLogger(UserMultiImpl.class);
     @Inject
     String pageNo;
+
+    @OSGiService
+    UserApiConfigService userApiConfigService;
+
     @Override
     public List<Map<String, String>> getData() throws JSONException, IOException {
 
@@ -44,6 +51,7 @@ public class UserMultiImpl implements UserMulti {
 
     @Override
     public String getUrl() {
-        return "https://reqres.in/api/users?page="+pageNo;
+        //return "https://reqres.in/api/users?page="+pageNo;
+        return userApiConfigService.getMultiUserApi()+pageNo;
     }
 }

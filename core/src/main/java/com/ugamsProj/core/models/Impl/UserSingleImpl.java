@@ -1,9 +1,12 @@
 package com.ugamsProj.core.models.Impl;
 import com.ugamsProj.core.models.UserSingle;
+import com.ugamsProj.core.services.UserApiConfigService;
 import com.ugamsProj.core.utils.Network;
+import com.ugamsProj.core.utils.UserApi;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -17,23 +20,30 @@ import java.util.Iterator;
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class UserSingleImpl implements UserSingle{
     final Logger log = LoggerFactory.getLogger(UserSingleImpl.class);
+
+    @OSGiService
+    UserApiConfigService userApiConfigService;
+
     @Inject
     String id;
     String fname;
     String lname;
     String email;
     String avatar;
+
     @Override
     public String getUrl(){
-        return "https://reqres.in/api/users/"+id;
+        return userApiConfigService.getSingleUserApi()+id;
     }
 
 
     @Override
     public String getMessage() throws IOException, JSONException {
 
-        String response = Network.readJson(getUrl());
+        //String response = Network.readJson(getUrl());
+        String response = UserApi.readData(getUrl());
         JSONObject jsonObject =  new JSONObject(response);
+        log.info(String.valueOf(jsonObject));
         Iterator x = jsonObject.keys();
         JSONArray jsonArray = new JSONArray();
         while (x.hasNext()){
@@ -65,7 +75,9 @@ public class UserSingleImpl implements UserSingle{
 
     @Override
     public String getAvatar() {
-        String path=avatar.replaceAll("https://reqres.in/img/faces/","/content/dam/ugamsproj/");
-        return path;
+        //String path=avatar.replaceAll("https://reqres.in/img/faces/","/content/dam/ugamsproj/");
+        String imgName = avatar.substring(28);
+        String dam="/content/dam/ugamsproj/";
+        return dam+imgName;
     }
 }
