@@ -8983,3 +8983,27 @@ dl.accordion.time-line:before {
 }
 
 /*-------- end footer Area -------------*/
+
+.list-container {
+	font-family: Times New Roman;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+}
+
+.round {
+    border: 1px solid #03bfcb;
+    border-radius: 50%;
+    padding: 7px;
+
+}
+.cardlist-container {
+    margin: 10px 0;
+}
+.column {
+float: left;
+width: 20%;
+padding: 5px;
+}

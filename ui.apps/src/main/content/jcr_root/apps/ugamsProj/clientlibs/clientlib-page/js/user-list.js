@@ -7,8 +7,10 @@ xhr.open("GET", "https://reqres.in/api/users?page="+pageno, true);
 xhr.onload = function(){
 console.log(xhr.responseText);
 var json = JSON.parse(xhr.responseText);
+
 var data = json["data"];
 console.log(data);
+
 const markup = json.data.map(el => {
 return `
 <li class="cardlist-container column">

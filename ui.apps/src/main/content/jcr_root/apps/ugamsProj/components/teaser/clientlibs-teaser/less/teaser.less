@@ -1,0 +1,113 @@
+.teaser1{
+    .cmp-teaser{
+        .cmp-teaser__content{
+            text-align: right !important;
+            right:0px;
+        }
+    }
+}
+.image-left{
+	.cmp-teaser{
+        display: flex !important;
+        .cmp-teaser__content{
+            width: 50% !important;
+            height:auto !important;
+        }
+    }
+    .cmp-teaser{
+        .cmp-teaser__image{
+            width: 50% !important;
+			height: auto !important;
+        }
+    }
+
+}
+.image-right{
+	.cmp-teaser{
+        display: flex !important;
+        flex-direction: row-reverse;
+        .cmp-teaser__content{
+            width: 50% !important;
+            height:auto !important;
+        }
+    }
+    .cmp-teaser{
+        .cmp-teaser__image{
+            width: 50% !important;
+			height: auto !important;
+        }
+    }
+
+}
+
+
+.text-over-image{
+    .cmp-teaser{
+        position:relative;
+        .cmp-teaser__content{
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: flex-end !important;
+                position: absolute !important;
+                bottom: 0 !important;
+            	top:0 !important;
+            	margin-left:15px;
+            	margin-bottom:25px;
+            	color: #FFFFFF;
+            	.cmp-teaser__title{
+                	color: #FFFFFF;
+					background-color: rgba(0, 0, 0, 0.5);
+                    width: fit-content;
+                	margin-bottom:15px;
+            	}
+            	.cmp-teaser__pretitle{
+                    background-color: rgba(0, 0, 0, 0.5);
+                    width: fit-content;
+                    margin-bottom:15px;
+
+                }
+                .cmp-teaser__description{    
+                    color: #FFFFFF;
+                    background-color: rgba(0, 0, 0, 0.5);                   
+                    width: fit-content; 
+                    margin-bottom:15px;
+                }
+        }
+    }
+}
+
+
+
+.background-color{
+    .cmp-teaser{
+        .cmp-teaser__content{
+            background-color:#87ceeb;
+            .cmp-teaser__description{
+                color: black;
+            }
+            .cmp-teaser__pretitle{
+                color: black;
+            }
+        }
+    }
+}
+
+
+.button{
+    .cmp-teaser{
+        .cmp-teaser__content{
+            .cmp-teaser__action-container{
+                .cmp-teaser__action-link{
+                        border-color: #fff !important;
+                        color: #fff !important;
+                    	border-radius: 50px;
+                        background-color: rgba(0,0,0,0.5) !important;
+                    	padding:15px !important;
+                    	font-size: 13px !important;
+                        font-weight: bold;
+                    	margin-right:170px !important;
+                }
+            }
+        }
+    }
+}

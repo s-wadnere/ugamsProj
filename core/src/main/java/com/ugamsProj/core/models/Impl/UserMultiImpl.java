@@ -1,5 +1,6 @@
 package com.ugamsProj.core.models.Impl;
 
+
 import com.ugamsProj.core.models.UserMulti;
 import com.ugamsProj.core.services.UserApiConfigService;
 import com.ugamsProj.core.utils.Network;
@@ -31,9 +32,11 @@ public class UserMultiImpl implements UserMulti {
 
         String response = Network.readJson(getUrl());
         JSONObject jsonObject =  new JSONObject(response);
+
         log.info("=====take response");
         JSONArray jsonArray1 = jsonObject.getJSONArray("data");
         log.info("===============jsonArray1");
+
         List<Map<String, String>> userList = new ArrayList<>();
         for (int i=0;i<jsonArray1.length();i++){
             Map<String,String> user =new HashMap<>();
@@ -43,7 +46,9 @@ public class UserMultiImpl implements UserMulti {
             user.put("avatar",jsonArray1.getJSONObject(i).getString("avatar"));
             userList.add(user);
         }
+
         log.info("===userList===");
+
         return userList;
     }
 

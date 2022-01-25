@@ -39,6 +39,7 @@ public class UserSingleImpl implements UserSingle{
     @Override
     public String getMessage() throws IOException, JSONException {
 
+
         String response = Network.readJson(getUrl());
         JSONObject jsonObject =  new JSONObject(response);
         log.info("===take response");
@@ -46,6 +47,7 @@ public class UserSingleImpl implements UserSingle{
         JSONArray jsonArray = new JSONArray();
         while (x.hasNext()){
             String key = x.next();
+
             jsonArray.put(jsonObject.get(key));
         }
         email = jsonArray.getJSONObject(0).getString("email");

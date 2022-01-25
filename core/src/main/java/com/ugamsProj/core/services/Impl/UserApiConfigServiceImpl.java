@@ -1,5 +1,6 @@
 package com.ugamsProj.core.services.Impl;
 
+
 import com.ugamsProj.core.config.UserApiConfig;
 import com.ugamsProj.core.services.UserApiConfigService;
 import org.osgi.service.component.annotations.Activate;
@@ -15,8 +16,10 @@ public class UserApiConfigServiceImpl implements UserApiConfigService{
 
     @Activate
     public void activate(UserApiConfig userApiConfig) {
+
         singleUserApi = userApiConfig.singleUserApi();
         multiUserApi = userApiConfig.multiUserApi();
+
     }
     @Override
     public String getSingleUserApi() {
