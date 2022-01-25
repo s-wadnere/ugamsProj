@@ -44,13 +44,12 @@ public class DynamicDataSourceServlet extends SlingSafeMethodsServlet {
     protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) throws IOException {
         LOGGER.info("inside get");
         ResourceResolver resourceResolver = request.getResourceResolver();
-        Resource currentResource = request.getResource();
         Resource jsonResource = resourceResolver.getResource("/content/dam/ugamsproj/country.json");
-        LOGGER.info("Inputstream========"+jsonResource.toString());
+        LOGGER.info("Inputstream========");
         Asset asset = DamUtil.resolveToAsset(jsonResource);
         Rendition originalAsset = Objects.requireNonNull(asset).getOriginal();
         InputStream content = Objects.requireNonNull(originalAsset).adaptTo(InputStream.class);
-        LOGGER.info("Inputstream========"+content);
+        LOGGER.info("Inputstream========");
         StringBuilder jsonContent = new StringBuilder();
         BufferedReader jsonReader = new BufferedReader(
                 new InputStreamReader(Objects.requireNonNull(content), StandardCharsets.UTF_8));
@@ -58,7 +57,7 @@ public class DynamicDataSourceServlet extends SlingSafeMethodsServlet {
         while ((line = jsonReader.readLine()) != null) {
             jsonContent.append(line);
         }
-        LOGGER.info("jsoncontent==============="+jsonContent);
+        LOGGER.info("jsoncontent===============");
         JSONArray jsonArray = null;
         try {
             jsonArray = new JSONArray(jsonContent.toString());

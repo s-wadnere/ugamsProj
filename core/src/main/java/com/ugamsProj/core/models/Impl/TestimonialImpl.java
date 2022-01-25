@@ -23,7 +23,7 @@ import javax.inject.Inject;
 @JsonRootName("Testimonial_Component")
 public class TestimonialImpl implements Testimonial{
 
-    final protected static String RESOURCE_TYPE="ugamsProj/components/content/testimonial";
+    protected static final String RESOURCE_TYPE="ugamsProj/components/content/testimonial";
     @Inject
     String name;
     @Inject

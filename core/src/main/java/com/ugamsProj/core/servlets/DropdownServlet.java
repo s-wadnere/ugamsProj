@@ -30,10 +30,9 @@ public class DropdownServlet extends SlingSafeMethodsServlet {
     @Override
     protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) {
         try {
-            String path = "/content/ugamsProj/us/en";
             ResourceResolver resourceResolver = request.getResourceResolver();
             List<KeyValue> dropDownList = new ArrayList<>();
-            Resource pathResource = resourceResolver.getResource(path);
+            Resource pathResource = resourceResolver.getResource("/content/ugamsProj/us/en");
             if(pathResource != null) {
                 Page page = pathResource.adaptTo(Page.class);
                 if (page != null) {
@@ -63,6 +62,7 @@ public class DropdownServlet extends SlingSafeMethodsServlet {
                 }
             }
         } catch (Exception e) {
+            e.getStackTrace();
         }
     }
 

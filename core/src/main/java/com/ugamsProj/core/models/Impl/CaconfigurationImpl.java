@@ -14,8 +14,7 @@ import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.apache.sling.models.annotations.injectorspecific.ScriptVariable;
 import org.apache.sling.models.annotations.injectorspecific.SlingObject;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 import javax.annotation.PostConstruct;
 
@@ -26,7 +25,6 @@ import javax.annotation.PostConstruct;
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 
 public class CaconfigurationImpl implements Caconfiguration {
-    private static final Logger LOG = LoggerFactory.getLogger(CaconfigurationImpl.class);
     protected static final String RESOURCE_TYPE="";
     @SlingObject
     ResourceResolver resourceResolver;

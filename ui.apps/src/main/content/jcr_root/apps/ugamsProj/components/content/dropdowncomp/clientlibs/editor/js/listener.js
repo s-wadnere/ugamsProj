@@ -27,8 +27,10 @@
                 obj["content"] = cnt;
                 optionItems.add(obj);
             }
-            if (citiesNodeVal !== "") // Set the value once options are loaded 
-        		$(citiesField).find("coral-select-item[value='"+citiesNodeVal+"']").attr("selected", "selected");
+            if (citiesNodeVal !== "")
+            {
+                 $(citiesField).find("coral-select-item[value='"+citiesNodeVal+"']").attr("selected", "selected");
+            }
         };
 
 

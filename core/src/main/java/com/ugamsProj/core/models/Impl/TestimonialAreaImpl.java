@@ -19,16 +19,16 @@ public class TestimonialAreaImpl implements TestimonialArea{
     Resource field;
     @Override
     public List<Map<String, String>> getTestimonialAreaDetails() {
-        List<Map<String, String>> TestimonialAreaMap = new ArrayList<>();
+        List<Map<String, String>> testimonialAreaMap = new ArrayList<>();
         if (field != null) {
             for (Resource fact : field.getChildren()) {
-                Map<String, String> TestimonialMap = new HashMap<>();
-                TestimonialMap.put("name", fact.getValueMap().get("name", String.class));
-                TestimonialMap.put("desg", fact.getValueMap().get("desg", String.class));
-                TestimonialMap.put("desc", fact.getValueMap().get("desc", String.class));
-                TestimonialAreaMap.add(TestimonialMap);
+                Map<String, String> testimonialMap = new HashMap<>();
+                testimonialMap.put("name", fact.getValueMap().get("name", String.class));
+                testimonialMap.put("desg", fact.getValueMap().get("desg", String.class));
+                testimonialMap.put("desc", fact.getValueMap().get("desc", String.class));
+                testimonialAreaMap.add(testimonialMap);
             }
         }
-        return TestimonialAreaMap;
+        return testimonialAreaMap;
     }
 }
