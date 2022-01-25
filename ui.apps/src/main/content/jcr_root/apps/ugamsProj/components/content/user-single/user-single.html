@@ -1,0 +1,12 @@
+<h1>user-single</h1>
+<sly class="container" data-sly-use.singleuser="com.ugamsProj.core.models.UserSingle"></sly>
+<h3 hidden>${singleuser.url}</h3>
+<h3 hidden>${singleuser.message}</h3>
+<div class="column cardlist-container">
+	<img src="${singleuser.avatar}" class="round" alt=""/>
+<div>
+<span>${singleuser.fname}</span>
+<span>${singleuser.lname}</span>
+</div>
+<p id="demo3">${singleuser.email}</p>
+</div>

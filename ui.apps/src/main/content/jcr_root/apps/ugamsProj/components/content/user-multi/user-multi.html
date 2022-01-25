@@ -1,0 +1,13 @@
+<h1>user-multi</h1>
+<sly class="list-container" data-sly-use.singleuser="com.ugamsProj.core.models.UserMulti"></sly>
+<h3 hidden>${singleuser.url}</h3>
+<div data-sly-list.items=${singleuser.data}>
+<div class="column cardlist-container">
+<img src="${items.avatar}" class="round" alt=""/>
+<div>
+<span>${items.fname}</span>
+<span>${items.lname}</span>
+</div>
+<p id="demo3">${items.email}</p>
+</div>
+</div>
