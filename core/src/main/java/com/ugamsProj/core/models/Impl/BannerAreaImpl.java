@@ -22,7 +22,7 @@ import javax.inject.Inject;
 
 @JsonRootName("banner")
 public class BannerAreaImpl implements BannerArea{
-    final protected static String RESOURCE_TYPE="ugamsProj/components/content/banner-area";
+    protected static final String RESOURCE_TYPE="ugamsProj/components/content/banner-area";
 
     @Inject
     String title;

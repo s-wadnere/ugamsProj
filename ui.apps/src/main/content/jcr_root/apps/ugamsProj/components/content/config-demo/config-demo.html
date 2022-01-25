@@ -1,17 +1,17 @@
 <sly data-sly-use.osgiconfig="com.ugamsProj.core.models.OSGIConfigModelDemo"></sly>
    <div>
-       <p> Service Name : <b>${osgiconfig.serviceName}</b></p>
+       <p> Service Name : <strong>${osgiconfig.serviceName}</strong></p>
    </div>
    <div>
-       <p> Service ID : <b>${osgiconfig.serviceID}</b></p>
+       <p> Service ID : <strong>${osgiconfig.serviceID}</strong></p>
    </div>
    <div>
-       <p> Service : <b>${osgiconfig.isService}</b></p>
+       <p> Service : <strong>${osgiconfig.isService}</strong></p>
    </div>
    <div>
-       <p> Run Mode : <b>${osgiconfig.runModes}</b></p>
+       <p> Run Mode : <strong>${osgiconfig.runModes}</strong></p>
    </div>
-   <div><b>Service Countries</b>
+   <div><strong>Service Countries</strong>
    </div>
    <ul data-sly-list="${osgiconfig.countries}">
       <li>${item}</li>

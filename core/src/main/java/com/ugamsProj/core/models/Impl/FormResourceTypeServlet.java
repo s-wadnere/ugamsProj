@@ -14,6 +14,7 @@ import javax.servlet.ServletException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 @Component(service = Servlet.class)
 @SlingServletResourceTypes(
@@ -26,13 +27,13 @@ public class FormResourceTypeServlet extends SlingSafeMethodsServlet {
         final ResourceResolver resourceResolver = req.getResourceResolver();
         Page page = resourceResolver.adaptTo(PageManager.class).getPage("/content/ugamsProj/us/en");
 
-        ArrayList pagesList = new ArrayList();
+        List<String> pagesList = new ArrayList<>();
         Iterator<Page> childPagesList = page.listChildren();
         while (childPagesList.hasNext()) {
             Page childPage = childPagesList.next();
-            String ChildPageName;
-            ChildPageName =childPage.getTitle();
-            pagesList.add(ChildPageName);
+            String childPageName;
+            childPageName =childPage.getTitle();
+            pagesList.add(childPageName);
         }
         resp.setContentType("text/html");
         resp.getWriter().print(pagesList.toString());

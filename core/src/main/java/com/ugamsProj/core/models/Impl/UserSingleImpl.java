@@ -2,7 +2,6 @@ package com.ugamsProj.core.models.Impl;
 import com.ugamsProj.core.models.UserSingle;
 import com.ugamsProj.core.services.UserApiConfigService;
 import com.ugamsProj.core.utils.Network;
-import com.ugamsProj.core.utils.UserApi;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
@@ -40,14 +39,15 @@ public class UserSingleImpl implements UserSingle{
     @Override
     public String getMessage() throws IOException, JSONException {
 
-        //String response = Network.readJson(getUrl());
-        String response = UserApi.readData(getUrl());
+
+        String response = Network.readJson(getUrl());
         JSONObject jsonObject =  new JSONObject(response);
-        log.info(String.valueOf(jsonObject));
-        Iterator x = jsonObject.keys();
+        log.info("===take response");
+        Iterator <String> x = jsonObject.keys();
         JSONArray jsonArray = new JSONArray();
         while (x.hasNext()){
-            String key = (String) x.next();
+            String key = x.next();
+
             jsonArray.put(jsonObject.get(key));
         }
         email = jsonArray.getJSONObject(0).getString("email");
@@ -75,7 +75,6 @@ public class UserSingleImpl implements UserSingle{
 
     @Override
     public String getAvatar() {
-        //String path=avatar.replaceAll("https://reqres.in/img/faces/","/content/dam/ugamsproj/");
         String imgName = avatar.substring(28);
         String dam="/content/dam/ugamsproj/";
         return dam+imgName;

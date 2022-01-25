@@ -60,10 +60,12 @@ public class LoggingFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) {
+        //implementation
     }
 
     @Override
     public void destroy() {
+        //implementation
     }
 
 }

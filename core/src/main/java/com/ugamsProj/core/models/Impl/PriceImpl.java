@@ -22,7 +22,7 @@ import javax.inject.Inject;
 
 @JsonRootName("price")
 public class PriceImpl implements Price{
-    final protected static String RESOURCE_TYPE="ugamsProj/components/content/price";
+    protected static final String RESOURCE_TYPE="ugamsProj/components/content/price";
 
     @Inject
     String type;

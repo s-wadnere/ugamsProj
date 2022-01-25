@@ -23,7 +23,7 @@ import javax.inject.Inject;
 @JsonRootName("HomeAbout_Component")
 public class HomeAboutImpl implements HomeAbout{
 
-    final protected static String RESOURCE_TYPE="ugamsProj/components/content/home-about";
+    protected static final String RESOURCE_TYPE="ugamsProj/components/content/home-about";
 
     @Inject
     String title;
